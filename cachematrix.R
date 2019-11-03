@@ -1,6 +1,6 @@
 ## The makeCacheMatrix function receives a matrix object as a parameter and builds a special matrix object that can 
 ## save a matrix and its respective inverse.
-##
+
 ## This special object is a list of 4 functions:
 ## 1. set(y) -> Receives a matrix as a parameter and saves it inside the object.
 ## 2. get() -> Returns the matrix saved inside the object. 
@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ##
 ## If the inverse of the matrix is already stored in the object as a cache, cacheSolve() prints a message
 ## specifying it's getting cached data and quickly returns it.
-##
+
 ## If, however, the inverse of the matrix isn't stored in the object, the function solve() is utilized to calculate
 ## the inverse of the matrix inside x, being promptly cached inside the object. cacheSolve() then returns the inverse
 ## of the matrix.
